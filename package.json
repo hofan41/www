@@ -1,0 +1,16 @@
+{
+  "name": "hofan41.com",
+  "version": "1.0.0",
+  "description": "hofan41.com homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "hofan41",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^8.6.1",
+    "jade": "^1.10.0",
+    "promise": "^7.0.1"
+  }
+}
