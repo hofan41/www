@@ -2,14 +2,19 @@ extends layout
 
 block content
     div(class='row')
+        br
+        br
         div(class='center-block', style='width:1000px')
-            div
+            div(class='row')
                 h1 Patent Search Service
-            div
+            div(class='row')
                 form(id='uspto')
                     input(type='text', class='query')
                     input(type='submit')
-            div(id='patents')
+                br
+                br
+                br
+            div(id='patents', class='row')
                 img(src='/assets/img/balls.svg')
             script(type='text/template', id='patent-template').
                 div(class='col-md-3 text-right')

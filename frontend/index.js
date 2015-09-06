@@ -14,6 +14,9 @@ var view = new internals.components.Views.PatentListView({
 $(function() {
     $('#uspto').submit(function(e) {
         e.preventDefault();
-        view.trigger('reload', $('#uspto .query').val());
+        var query = $('#uspto .query').val().replace(/[^a-zA-Z\d./]/g, '-');
+        if (query) {
+            view.trigger('reload', query);
+        }
     });
 });
