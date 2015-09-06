@@ -3,6 +3,8 @@ var Backbone = require('backbone');
 var Jade = require('jade');
 
 module.exports = Backbone.View.extend({
+    tagName: 'tr',
+
     template: Jade.compile($('#patent-template').html()),
 
     render: function() {

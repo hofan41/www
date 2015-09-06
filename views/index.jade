@@ -2,23 +2,23 @@ extends layout
 
 block content
     div(class='row')
-        br
-        br
-        div(class='center-block', style='width:1000px')
-            div(class='row')
-                h1 Patent Search Service
-            div(class='row')
-                form(id='uspto')
-                    input(type='text', class='query')
-                    input(type='submit')
+        div(class='col-md-offset-1 col-md-8')
+            h1 Patent Search Service
+            div
+                form(id='uspto', class='form-inline')
+                    div(class='input-group')
+                        div(class='input-group-addon') Query
+                        input(type='text', id='query', class='query form-control', placeholder='KANG, HO-FAN')
+                        span(class='input-group-btn')
+                            button(type='submit', class='btn btn-primary') Go!
                 br
-                br
-                br
-            div(id='patents', class='row')
-                div(class='col-md-12 text-center')
-                    img(src='/assets/img/balls.svg')
-            script(type='text/template', id='patent-template').
-                div(class='col-md-3 text-right')
-                    a(href='\#{url}', target='_blank') \#{id}
-                div(class='col-md-9') \#{title}
+            div(class='table-responsive')
+                table(id='patents', class='table table-striped table-hover')
+                    tr
+                        td(class='text-center')
+                            img(src='/assets/img/balls.svg')
+    script(type='text/template', id='patent-template').
+        td
+            a(href='\#{url}', target='_blank') \#{id}
+        td \#{title}
     script(type='text/javascript', charset='utf-8', src='/assets/js/bundle.js')
