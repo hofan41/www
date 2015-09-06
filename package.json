@@ -1,17 +1,24 @@
 {
-  "name": "hofan41.com",
-  "version": "1.0.0",
-  "description": "hofan41.com homepage",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test"
-  },
-  "author": "hofan41",
-  "license": "MIT",
-  "dependencies": {
-    "hapi": "^8.6.1",
-    "jade": "^1.10.0",
-    "promise": "^7.0.1",
-    "wreck": "^5.5.1"
-  }
+    "name": "hofan41.com",
+    "version": "1.0.0",
+    "description": "hofan41.com homepage",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm test"
+    },
+    "author": "hofan41",
+    "license": "MIT",
+    "dependencies": {
+        "backbone": "^1.2.3",
+        "hapi": "8.x.x",
+        "jade": "1.x.x",
+        "joi": "^6.6.1",
+        "jquery": "^2.1.4",
+        "promise": "7.x.x",
+        "underscore": "^1.8.3",
+        "uspto": "2.x.x"
+    },
+    "devDependencies": {
+        "browserify": "^11.0.1"
+    }
 }
